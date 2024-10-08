@@ -1,0 +1,6 @@
+- id: pre_commit_hook
+  name: Check hardcoded credentials
+  description: Checks the commit additions in order to prevent credentials to be pushed to GitHub.
+  entry: pre_commit_hook
+  language: python
+  always_run: false
