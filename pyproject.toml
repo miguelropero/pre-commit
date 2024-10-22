@@ -2,5 +2,11 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "pre-commit-hook"  # Nombre de tu proyecto
+version = "0.1.0"  # Versión de tu proyecto
+description = "Hook de pre-commit para validar credenciales hardcodeadas"
+dependencies = []
+
 [project.scripts]
-pre_commit_hook = "pre_commit_hook.main:main"
+pre_commit_hook = "pre_commit_hook.main:main"  # Asegúrate de que este entry point exista
