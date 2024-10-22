@@ -9,4 +9,4 @@ description = "Hook de pre-commit para validar credenciales hardcodeadas"
 dependencies = []
 
 [project.scripts]
-pre_commit_hook = "pre_commit_hook.main:main"  # Asegúrate de que este entry point exista
+pre_commit_hook = "pre_commit_hook.pre_commit:main"  # Cambia 'main' a 'pre_commit'
