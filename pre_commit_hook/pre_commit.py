@@ -1,5 +1,5 @@
 import logging
-from pre_commit_hook.utils.git_utils import get_diff
+#from pre_commit_hook.utils.git_utils import get_diff
 
 logger = logging.getLogger("pre-commit")
 
@@ -9,10 +9,6 @@ def main():
     Simulación simplificada: Permite siempre pasar la validación sin realizar ningún chequeo.
     """
     try:
-        # Obtener las diferencias (opcional, se puede usar para ver qué se está comiteando)
-        diff = get_diff()
-        print("Diff del commit:", diff)
-        
         # Este código siempre será exitoso (retorno 0), por lo que no se bloquea el commit
         print("Validación simplificada: Commit permitido.")
         return 0
